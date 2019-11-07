@@ -37,6 +37,7 @@ The need to use univariate modeling arises in situations where:
 |term|description|
 |-|-|
 |White Noise|pure random with no corelation to each other; has zero mean and a constant variance|
+|Stationarity|if the marginal distribution of Y at time  t[p(Y<sub>t</sub>)] is the same as any other point in time; which means p(Y<sub>t</sub>)=p(Y<sub>t+k</sub>) no matter what 't' is|
 
 If a series is not white noise, then we can start analyse it.
 
@@ -59,7 +60,12 @@ Y<sub>t</sub>(p) = f(Y<sub>t-1</sub>,Y<sub>t-2</sub>,..., Y<sub>t-p</sub>,e<sub>
 
 Y<sub>t</sub> = f(e<sub>t-1</sub>,e<sub>t-2</sub>,e<sub>t-3</sub>,..., e<sub>t</sub>)
 
-Y<sub>t</sub> = f(error<sub>t-1</sub>,error<sub>t-2</sub>,error<sub>t-3</sub>,..., error<sub>t</sub>)
+Y<sub>t</sub> = f(e<sub>t-1</sub>,e<sub>t-2</sub>,e<sub>t-3</sub>,..., e<sub>t</sub>)
 
-# 3. ARMA
+# 3. AutoRegressive Moving Average Model - ARMA
+A combination of both AR & MA
+
+Y<sub>t</sub>(p,q) = f(Y<sub>t-1</sub>,Y<sub>t-2</sub>,Y<sub>t-3</sub>,..., e<sub>t</sub>) + f(e<sub>t-1</sub>,e<sub>t-2</sub>,e<sub>t-3</sub>,..., e<sub>t</sub>)
+
+
 # 4. ARIMA
