@@ -40,12 +40,26 @@ The need to use univariate modeling arises in situations where:
 
 If a series is not white noise, then we can start analyse it.
 
+|anotation|meaning|
+|-|-|
+|f()|linear function: f(x<sub>1</sub>,x<sub>2</sub>) = w<sub>1</sub>x<sub>1</sub>+w<sub>2</sub>x<sub>2</sub>+c|
+| e|error term|
+
 # 1. AutoRegressive Model - AR
 
 ```
 AR model is one in which Y<sub>t</sub> only depends on its own past values
 ```
-Y<sub>t</sub> = f(Y<sub>t-1</sub>,Y<sub>t-2</sub>,Y<sub>t-3</sub>,...)
-# 2. MA
+Y<sub>t</sub> = f(Y<sub>t-1</sub>,Y<sub>t-2</sub>,Y<sub>t-3</sub>,..., e<sub>t</sub>)
+
+Y<sub>t</sub>(p) = f(Y<sub>t-1</sub>,Y<sub>t-2</sub>,..., Y<sub>t-p</sub>,e<sub>t</sub>)
+
+# 2. Moving Average - MA
+
+
+Y<sub>t</sub> = f(e<sub>t-1</sub>,e<sub>t-2</sub>,e<sub>t-3</sub>,..., e<sub>t</sub>)
+
+Y<sub>t</sub> = f(error<sub>t-1</sub>,error<sub>t-2</sub>,error<sub>t-3</sub>,..., error<sub>t</sub>)
+
 # 3. ARMA
 # 4. ARIMA
