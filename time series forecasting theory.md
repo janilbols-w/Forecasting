@@ -38,13 +38,20 @@ The need to use univariate modeling arises in situations where:
 |-|-|
 |White Noise|pure random with no corelation to each other; has zero mean and a constant variance|
 |Stationarity|if the marginal distribution of Y at time  t[p(Y<sub>t</sub>)] is the same as any other point in time; which means p(Y<sub>t</sub>)=p(Y<sub>t+k</sub>) no matter what 't' is|
+|Weakly Stationarity|conditions|
+||E(Y<sub>1</sub>)=E(Y<sub>2</sub>)=E(Y<sub>3</sub>)=...=E(Y<sub>t</sub>)= mu(a constant)|
+||Var(Y<sub>1</sub>)=Var(Y<sub>2</sub>)=Var(Y<sub>3</sub>)=...=Var(Y<sub>t</sub>)= v<sub>0</sub>(a constant)|
+||Cov(Y<sub>1</sub>,Y<sub>1+k</sub>)=Cov(Y<sub>2</sub>,Y<sub>2+k</sub>)=Cov(Y<sub>3</sub>,Y<sub>3+k</sub>)=...=Cov(Y<sub>t</sub>,Y<sub>t+k</sub>)= v<sub>k</sub>(depends only on lag k)|
+
 
 If a series is not white noise, then we can start analyse it.
 
+# Anotation
 |anotation|meaning|
 |-|-|
 |f()|linear function: f(x<sub>1</sub>,x<sub>2</sub>) = w<sub>1</sub>x<sub>1</sub>+w<sub>2</sub>x<sub>2</sub>+c|
 | e|error term|
+
 
 # 1. AutoRegressive Model - AR
 
@@ -68,4 +75,4 @@ A combination of both AR & MA
 Y<sub>t</sub>(p,q) = f(Y<sub>t-1</sub>,Y<sub>t-2</sub>,Y<sub>t-3</sub>,..., e<sub>t</sub>) + f(e<sub>t-1</sub>,e<sub>t-2</sub>,e<sub>t-3</sub>,..., e<sub>t</sub>)
 
 
-# 4. ARIMA
+# 4. Autoregressiiv ARIMA
