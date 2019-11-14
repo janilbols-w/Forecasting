@@ -8,3 +8,5 @@ repo for methods to analyze time series data
 ## [11 Classical Time Series Forecasting Methods in Python (Cheat Sheet)](https://machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/)
 
 ## [TIME SERIES DECOMPOSITION & PREDICTION IN PYTHON](https://pythonforfinance.net/2019/07/22/time-series-decomposition-prediction-in-python/)
+
+## [python package: Statsmodels](https://www.statsmodels.org/stable/examples/index.html)
